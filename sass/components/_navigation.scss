@@ -1,0 +1,56 @@
+.navigation-page {
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.navigation-page a {
+    color: $BlackColor;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation-page a:hover,
+.navigation-page a:focus {
+    color: $BlueColor;
+}
+
+.navigation-page a:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -31px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $BlueColor;
+    pointer-events: none;
+    transform: $TransitionSet;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+}
+
+.active-nav-link {
+    color: $BlueColor !important;
+}
+
+.active-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -31px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $BlueColor;
+    pointer-events: none;
+}
+
+.trs-link {
+    transition: $TransitionSet;
+}

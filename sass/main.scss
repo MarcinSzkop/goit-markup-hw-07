@@ -1,5 +1,8 @@
-@use "./utils/vars" as *;
-@import "./components/navigation"
+@import "./utils/variables";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/navigation-contact";
+@import "./components/slider";
 
 body {
     font-family: 'Roboto'
@@ -31,4 +34,31 @@ ul {
 
 img {
     vertical-align: middle
-  }
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header-wrapper > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper > .container > nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper > .container > nav > .navigation-page {
+    display: flex;
+    gap: 46px;
+}
+
+.header-wrapper > .container > aside > .navigation-contact {
+    display: flex;
+    gap: 50px;
+}

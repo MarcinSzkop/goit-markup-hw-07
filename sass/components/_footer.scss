@@ -1,0 +1,164 @@
+.footer {
+    padding: 60px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    display: flex;
+    padding: 0px;
+}
+
+.footer-bg {
+    background: $FooterBG;
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.footer-adress {
+    font-weight: bold;
+    color: $WhiteColor;
+}
+
+.footer-adress a {
+    text-decoration: none;
+    color: $WhiteColor;
+    transition: color $TransitionSet;
+}
+
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: $BlueColor;
+}
+
+.footer-joinus-box {
+    width: 206px;
+    height: 80px;
+    padding-top: 12px;
+    margin-left: 70px;
+}
+
+.footer-joinus-heading {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: $WhiteColor;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social-icon-svg {
+    fill: $WhiteColor;
+    margin: 12px;
+}
+
+.footer > .container {
+    display: flex;
+}
+
+.footer-social-icon-bg {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    transition: background-color $TransitionSet;
+}
+
+.footer-social-icon-bg:hover,
+.footer-social-icon-bg:focus {
+    border-radius: 50%;
+    background-color: $BlueColor;
+    width: 44px;
+    height: 44px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.footer-newsletter {
+    width: 570px;
+    height: 86px;
+    margin-left: 78px;
+    margin-top: 12px;
+}
+
+.sub-box {
+    display: flex;
+}
+
+.footer-newsletter h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: $WhiteColor;
+    margin-bottom: 20px;
+}
+
+.form-sub {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+}
+
+.form-sub::placeholder {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px ;
+}
+
+.button-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background-color: $BlueColor;
+    margin-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0px 28px 0px 42px;
+    gap: 24px;
+    transition: background-color $TransitionSet;
+}
+
+.sub-button-text {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $WhiteColor;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color:  rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.icon-send-sub {
+    fill: $WhiteColor;
+}

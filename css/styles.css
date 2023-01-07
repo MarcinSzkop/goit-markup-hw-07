@@ -237,35 +237,6 @@ img {
     gap: 30px;
 }
 
-.articles h3 {
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--tertuary-color);
-    text-transform: uppercase;
-    padding-bottom: 10px;
-}
-
-.articles p {
-    font-size: 14px;
-    color: var(--secundary-color);
-    letter-spacing: 0.03em;
-    line-height: 24px;
-}
-
-.articles-icon-bg {
-    background: var(--lightpurtple-color);
-    border-radius: 4px;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.articles-icon {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
 
 /* Section - What We Do */
 

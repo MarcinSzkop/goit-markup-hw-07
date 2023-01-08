@@ -18,7 +18,7 @@
     position: relative;
     width: 528px;
     border-radius: 4px;
-    background-color: var(--quaternary-color);
+    background-color: $WhiteColor;
     transition: transform 0.6s; 
     transition-timing-function: ease;
     padding: 40px;
@@ -34,7 +34,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: inherit;
     border-radius: 50%;
-    background-color: var(--quaternary-color);
+    background-color: $WhiteColor;
     cursor: pointer;
 }
   
@@ -54,7 +54,7 @@
     font-style: bold;
     font-size: 20px;
     line-height: 23px;
-    color: var(--tertiary-color);
+    color: $BlackColor;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -64,7 +64,7 @@
     font-style: regular;
     font-size: 12px;
     line-height: 14px;
-    color: var(--secundary-color);
+    color: $DarkGrayColor;
     margin-bottom: 4px;
     text-align: start;
 }
@@ -80,13 +80,13 @@
 }
 
 .form-field:focus {
-    border-color: var(--primary-color) !important;
+    border-color: $BlueColor !important;
     outline: none;
 }
 
 .form-field:focus + svg {
-    fill: var(--primary-color);
-    transition: border-color var(--transition-set);
+    fill: $BlueColor;
+    transition: border-color $TransitionSet;
 }
 
 .form-field-comment {
@@ -96,7 +96,7 @@
     border: solid 1px;
     border-radius: 4px;
     border-color: rgba(33, 33, 33, 0.2);
-    transition: border-color var(--transition-set);
+    transition: border-color $TransitionSet;
 }
 
 textarea {
@@ -110,7 +110,7 @@ textarea {
 
 .form-field-comment:hover,
 .form-field-comment:focus {
-    border-color: var(--primary-color);
+    border-color: $BlueColor;
 }
 
 .icon-form {
@@ -118,8 +118,8 @@ textarea {
     left: 55px;
     margin-top: 20px;
     transform: translateY(-50%);
-    fill: var(--tertiary-color);
-    transition: var(--transition-set);
+    fill: $BlackColor;
+    transition: $TransitionSet;
 }
 
 .privacy-box {
@@ -170,24 +170,24 @@ textarea {
     font-style: regular;
     font-size: 14px;
     line-height: 24px;
-    color: var(--secundary-color);
+    color: $DarkGrayColor;
 }
 
 .text-privacy-form a {
-    color: var(--primary-color);
+    color: $BlueColor;
   }
 
 .button-submit {
     width: 200px;
     height: 50px;
-    background-color: var(--primary-color);
-    color: var(--quaternary-color);
+    background-color: $BlueColor;
+    color: $WhiteColor;
     border: none;
     border-radius: 4px;
     letter-spacing: 0.06em;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: var(--transition-set);
+    transition: $TransitionSet;
 }
 
 .button-submit:hover,

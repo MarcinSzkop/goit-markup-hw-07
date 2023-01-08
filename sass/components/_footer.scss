@@ -24,9 +24,10 @@
     padding-top: 20px;
 }
 
-.footer__adress--link {
+.footer__location {
     font-weight: bold;
     color: $WhiteColor;
+    transition: color $TransitionSet;
 
     &:hover,
     &:focus {
@@ -37,9 +38,7 @@
 .footer__contact {
     margin-top: 9px;
     color: $Footer-contact;
-}
-
-.footer__contact--link {
+    transition: color $TransitionSet;
     text-decoration: none;
 
     &:hover,
@@ -48,9 +47,6 @@
     }
 }
 
-.footer__link--transition {
-    transition: color $TransitionSet;
-}
 
 .footer__joinus-box {
     width: 206px;

@@ -1,10 +1,6 @@
 
 /* PORTFOLIO - MENU */
 
-.portfolio-section {
-    display: flex;
-}
-
 .portfolio-menu {
     list-style: none;
     display: flex;
@@ -16,12 +12,12 @@
     text-decoration: none;
 }
 
-.portfolio-menu-box {
+.portfolio-menu--box {
     margin-top: 94px;
     justify-content: center;
 }
 
-.button-portfolio {
+.portfolio-menu__button {
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
@@ -34,17 +30,22 @@
     width: 121px;
     height: 38px;
     transform: color $TransitionSet;
+
+    &:hover,
+    &:focus {
+        color: $WhiteColor;
+        background-color: $BlueColor;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
-    color: $WhiteColor;
-    background-color: $BlueColor;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 /* PORTFOLIO - SECTION */ 
+
+.portfolio-section {
+    display: flex;
+}
 
 .portfolio-grid {
     flex-wrap: wrap;
@@ -63,13 +64,13 @@
     letter-spacing: 0.03em;
     list-style: none;
     width: calc((100% - 60px) / 3 );
-}
 
-.portfolio-list:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-      transition: box-shadow $TransitionSet;
-  }
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition: box-shadow $TransitionSet;
+    }
+}
 
 .portfolio-figure {
     width: 370px;

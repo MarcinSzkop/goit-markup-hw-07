@@ -1,46 +1,46 @@
 .slider {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider__bg {
     background: $BgSlider;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bgbanner.jpg');
     background-position: center;
     background-repeat: no-repeat;
-}
 
-.slider h1 {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    color: $WhiteColor;
-    text-align: center;
-    margin: 106px 252px 30px;
-    letter-spacing: 0.06em;
-}
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.slider__button {
-    padding: 10px 42px 10px 41px;
-    margin-bottom: 106px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
-    color: $WhiteColor;
-    background-color: $BlueColor;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition-property: transform, color, background-color; 
-    transition: $TransitionSet;
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        color: $WhiteColor;
+        text-align: center;
+        margin: 106px 252px 30px;
+        letter-spacing: 0.06em;
+    }
 
-    &:hover {
-        transform: scale(1.1);
-        color: $BlueColor !important;
-        background-color: $WhiteColor !important;
+    &__button {
+        padding: 10px 42px 10px 41px;
+        margin-bottom: 106px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+        color: $WhiteColor;
+        background-color: $BlueColor;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition-property: transform, color, background-color; 
+        transition: $TransitionSet;
+    
+        &:hover {
+            transform: scale(1.1);
+            color: $BlueColor !important;
+            background-color: $WhiteColor !important;
+        }
     }
 }

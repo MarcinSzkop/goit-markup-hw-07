@@ -23,34 +23,26 @@
   </head>
 
   <body>
-    <header class="header-wrapper">
-      <div class="container">
+    <header class="header">
+      <div class="container header__wrapper">
         <!--Page Navigation-->
-        <nav>
-          <a class="logo logo--blue" href="index.html"
-            >Web<span class="logo--black">Studio</span>
+        <nav class="header__nav">
+          <a class="logo" href="index.html"
+            >Web<span class="logo__studio">Studio</span>
           </a>
-          <ul class="navigation">
+          <ul class="header__nav-list">
             <li>
               <a
-                class="navigation__link navigation__link--transition navigation__link--active"
+                class="header__nav-item header__nav-item--active"
                 href="./agencja.html"
                 >Agencja</a
               >
             </li>
             <li>
-              <a
-                class="navigation__link navigation__link--transition"
-                href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="header__nav-item" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a
-                class="navigation__link navigation__link--transition"
-                href="./kontakt.html"
-                >Kontakt</a
-              >
+              <a class="header__nav-item" href="./kontakt.html">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -83,9 +75,11 @@
 
     <main>
       <!--Slider-->
-      <section class="section slider__bg">
-        <div class="container slider">
-          <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <section class="section slider">
+        <div class="container slider__wrapper">
+          <h1 class="slider__title">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
           <button class="slider__button" type="button" data-modal-open>
             Zamów usługę
           </button>
@@ -435,8 +429,8 @@
     <footer class="footer footer__bg">
       <div class="container">
         <div>
-          <a href="index.html" class="logo logo--blue"
-            >Web<span class="logo--white">Studio</span></a
+          <a href="index.html" class="logo"
+            >Web<span class="logo__studio logo__studio--white">Studio</span></a
           >
           <address class="footer__adress">
             <a

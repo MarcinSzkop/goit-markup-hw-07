@@ -1,136 +1,97 @@
+.header {
+  padding: 24px 0px 25px;
+  border-bottom: 1px solid #ececec;
 
-.header-wrapper > .container {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.header-wrapper > .container > nav {
+  &__nav {
     display: flex;
     align-items: center;
-}
+    gap: 93px;
+  }
 
-.header-wrapper > .container > nav > .navigation {
+  &__nav-list {
     display: flex;
     gap: 46px;
-}
+  }
 
-.header-wrapper > .container > aside > .navigation-contact {
-    display: flex;
-    gap: 50px;
-}
-
-/* HEADER - LOGO */
-
-.logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    text-decoration: none;
-    margin-right: 93px;
-    padding: 24px 0 25px;
-}
-
-.logo--blue {
-    color: $BlueColor;
-}
-
-.logo--black {
-    color: $BlackColor;
-}
-
-.logo--white {
-    color: $WhiteColor;
-}
-
-/* HEADER - NAVIGATION  */
-
-.navigation {
-    list-style: none;
+  &__nav-item {
+    position: relative;
+    display: block;
     font-weight: 500;
     font-size: 14px;
-}
-
-.navigation a {
     color: $BlackColor;
     text-decoration: none;
     cursor: pointer;
+    transition: color $TransitionSet;
 
     &:hover,
     &:focus {
-        color: $BlueColor;
+      color: $BlueColor;
     }
-}
 
-.navigation a:hover::before {
-    content: '';
-    position: absolute;
-    bottom: -31px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $BlueColor;
-    pointer-events: none;
-    transform: $TransitionSet;
-}
+    &:is(:hover, :focus)::after {
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $BlueColor;
+      pointer-events: none;
+    }
 
-.navigation__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    position: relative;
-}
+    &--active {
+      color: $BlueColor;
 
-.navigation__link--active {
-    color: $BlueColor !important;
-
-    &::after {
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
-        bottom: -31px;
+        top: 45px;
         left: 0;
         width: 100%;
         height: 4px;
         border-radius: 2px;
         background-color: $BlueColor;
         pointer-events: none;
+      }
     }
-}
-
-.navigation__link--transition {
-    transition: $TransitionSet;
+  }
 }
 
 /* HEADER - CONTACT */
 
 .navigation-contact {
-    list-style: none;
-    font-weight: 500;
-    font-size: 14px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .navigation-contact a {
-    color: $DarkGrayColor;
-    transition: $TransitionSet;
+  color: $DarkGrayColor;
+  transition: $TransitionSet;
 }
 
 .navigation-contact__content {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 
-    &:hover,
-    &:focus {
-        color: $BlueColor;
-        fill: currentColor;
-    }
+  &:hover,
+  &:focus {
+    color: $BlueColor;
+    fill: currentColor;
+  }
 }
 
 .navigatiion-contact__icon {
-    vertical-align: middle;
-    margin-right: 10px;
-    fill: currentColor;
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: currentColor;
 }

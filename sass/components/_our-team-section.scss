@@ -2,7 +2,7 @@
     font-style: normal;
 }
 
-.our-team-section-bg {
+.our-team-section__bg {
     background: $BG-OurTeamSection;
 }
 
@@ -14,7 +14,7 @@
     color: $BlackColor;
 }
 
-.our-team-section-figure {
+.our-team-section__figure {
     background: $WhiteColor;
     margin-left: 0px;
     margin-right: 30px;
@@ -23,14 +23,14 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-section-list {
+.our-team-section__list {
     list-style: none;
     font-size: 16px;
     display: flex;
     gap: 30;
 }
 
-.our-team-section-list h3 {
+.our-team-section__list h3 {
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -38,7 +38,7 @@
     padding-top: 30px;
 }
 
-.our-team-section-list p {
+.our-team-section__list p {
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -47,29 +47,29 @@
     padding-bottom: 30px;
 }
 
-.our-team-social-box {
+.our-team-section__social-box {
     display: flex;
     gap: 10px;
     justify-content: center;
     padding-bottom: 30px;
 }
 
-.our-team-social-icon-svg {
+.our-team-section__social-icon-svg {
     display: flex;
     fill: $Gray-icons-color;
     padding: 12px;
+
+    &:hover,
+    &:focus {
+        background-color: $BlueColor;
+        fill: $WhiteColor;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+    }
 }
 
-.our-team-social-icon-svg:hover,
-.our-team-social-icon-svg:focus {
-    background-color: $BlueColor;
-    fill: $WhiteColor;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-}
-
-.icon-svg-bg {
+.our_team-section__icon-svg-bg {
     background-color: $WhiteColor;
     transition: fill $TransitionSet;
 }

@@ -15,7 +15,7 @@
     background: $FooterBG;
 }
 
-.address {
+.footer__adress {
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
@@ -24,25 +24,23 @@
     padding-top: 20px;
 }
 
-.footer-adress {
+.footer__adress--link {
     font-weight: bold;
     color: $WhiteColor;
-}
 
-.footer-adress a {
-    text-decoration: none;
-    color: $WhiteColor;
-    transition: $TransitionSet;
+    &:hover,
+    &:focus {
+        color: $BlueColor;
+    }
 }
 
 .footer__contact {
-    color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
+    color: $Footer-contact;
 }
 
-.footer__contact a {
+.footer__contact--link {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
 
     &:hover,
     &:focus {
@@ -50,8 +48,8 @@
     }
 }
 
-.footer__trs-link {
-    transition: color $TransitionSet);
+.footer__link--transition {
+    transition: color $TransitionSet;
 }
 
 .footer__joinus-box {

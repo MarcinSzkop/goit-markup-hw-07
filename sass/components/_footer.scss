@@ -1,3 +1,6 @@
+.footer > .container {
+    display: flex;
+}
 .footer {
     padding: 60px 0;
 }
@@ -21,15 +24,15 @@
     padding-top: 20px;
 }
 
-.footer__adress {
+.footer-adress {
     font-weight: bold;
     color: $WhiteColor;
 }
 
-.footer__adress a {
+.footer-adress a {
     text-decoration: none;
     color: $WhiteColor;
-    transition: color $TransitionSet;
+    transition: $TransitionSet;
 }
 
 .footer__contact {
@@ -40,11 +43,11 @@
 .footer__contact a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
-}
 
-.footer__contact a:hover,
-.footer__contact a:focus {
-    color: $BlueColor;
+    &:hover,
+    &:focus {
+        color: $BlueColor;      
+    }
 }
 
 .footer__trs-link {
@@ -74,10 +77,6 @@
 .footer__social-icon-svg {
     fill: $WhiteColor;
     margin: 12px;
-}
-
-.footer > .container {
-    display: flex;
 }
 
 .footer__social-icon-bg {

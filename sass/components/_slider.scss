@@ -6,13 +6,10 @@
 }
 
 .slider__bg {
+    background: $BgSlider;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bgbanner.jpg');
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.slider__bg--dark {
-    background: $BgSlider;
 }
 
 .slider h1 {

@@ -1,12 +1,12 @@
-.our-team-section {
+.our-team {
     font-style: normal;
 }
 
-.our-team-section__bg {
+.our-team__bg {
     background: $BG-OurTeamSection;
 }
 
-.our-team-section h2 {
+.our-team h2 {
     font-weight: 700;
     font-size: 36px;
     text-align: center;
@@ -14,7 +14,7 @@
     color: $BlackColor;
 }
 
-.our-team-section__figure {
+.our-team__figure {
     background: $WhiteColor;
     margin-left: 0px;
     margin-right: 30px;
@@ -23,14 +23,14 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-section__list {
+.our-team__list {
     list-style: none;
     font-size: 16px;
     display: flex;
     gap: 30;
 }
 
-.our-team-section__list h3 {
+.our-team__list h3 {
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -38,7 +38,7 @@
     padding-top: 30px;
 }
 
-.our-team-section__list p {
+.our-team__list p {
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -47,14 +47,14 @@
     padding-bottom: 30px;
 }
 
-.our-team-section__social-box {
+.our-team__social-box {
     display: flex;
     gap: 10px;
     justify-content: center;
     padding-bottom: 30px;
 }
 
-.our-team-section__social-icon-svg {
+.our-team__social-icon-svg {
     display: flex;
     fill: $Gray-icons-color;
     padding: 12px;
@@ -69,7 +69,7 @@
     }
 }
 
-.our_team-section__icon-svg-bg {
+.our_team__icon-svg-bg {
     background-color: $WhiteColor;
     transition: fill $TransitionSet;
 }

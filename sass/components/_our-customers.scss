@@ -9,33 +9,33 @@
     text-align: center;
 }
 
-.our-customers-bg {
+.our-customers__bg {
     width: 170px;   
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     margin-top: 50px;
     transition: border-color $TransitionSet;
+
+    &:hover,
+    &:focus {
+        border-color: $BlueColor;
+        cursor: pointer;
+    }
 }
 
-.our-customers-bg:hover svg,
-.our-customers-bg:focus svg {
+.our-customers__bg:hover svg,
+.our-customers__bg:focus svg {
     fill: $BlueColor;
 }
 
-.our-customers-bg:hover,
-.our-customers-bg:focus {
-    border-color: $BlueColor;
-    cursor: pointer;
-}
-
-.our-customers-list {
+.our-customers__list {
     list-style: none;
     display: flex;
     gap: 30px;
 }
 
-.icon-customers {
+.our-customers__icon {
     display: flex;
     margin: 16px 32px 16px 32px;
     fill: $Gray-icons-color;

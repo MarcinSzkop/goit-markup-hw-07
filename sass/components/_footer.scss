@@ -1,134 +1,80 @@
 .footer > .container {
-    display: flex;
+  display: flex;
 }
+
 .footer {
-    padding: 60px 0;
-}
+  padding: 60px 0;
 
-.footer a {
-    text-decoration: none;
-    display: flex;
-    padding: 0px;
-}
-
-.footer__bg {
+  &__bg {
     background: $FooterBG;
-}
+  }
 
-.footer__adress {
+  &__adress {
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-decoration: none;
     padding-top: 20px;
-}
+  }
 
-.footer__location {
+  &__location {
     font-weight: bold;
     color: $WhiteColor;
     transition: color $TransitionSet;
 
     &:hover,
     &:focus {
-        color: $BlueColor;
+      color: $BlueColor;
     }
-}
+  }
 
-.footer__contact {
+  &__contact {
     margin-top: 9px;
     color: $Footer-contact;
     transition: color $TransitionSet;
     text-decoration: none;
+    display: flex;
+    padding: 0px;
 
     &:hover,
     &:focus {
-        color: $BlueColor;      
+      color: $BlueColor;
     }
-}
+  }
 
-
-.footer__joinus-box {
+  &__joinus-box {
     width: 206px;
     height: 80px;
     padding-top: 12px;
     margin-left: 70px;
-}
+  }
 
-.footer__joinus-heading {
+  &__joinus-heading {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     color: $WhiteColor;
-}
+  }
 
-.footer__social-icons {
+  &__social-icons {
     display: flex;
     gap: 10px;
-}
+  }
 
-.footer__social-icon-svg {
-    fill: $WhiteColor;
-    margin: 12px;
-}
-
-.footer__social-icon-bg {
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 44px;
-    height: 44px;
-    transition: background-color $TransitionSet;
-
-    &:hover,
-    &:focus {
-        border-radius: 50%;
-        background-color: $BlueColor;
-        width: 44px;
-        height: 44px;
-        gap: 10px;
-        cursor: pointer;
-    }
-}
-
-.footer__newsletter {
+  &__newsletter {
     width: 570px;
     height: 86px;
     margin-left: 78px;
     margin-top: 12px;
-}
+  }
 
-.footer__sub-box {
+  &__sub-box {
     display: flex;
-}
+  }
 
-.footer__newsletter h3 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-style: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: $WhiteColor;
-    margin-bottom: 20px;
-}
-
-.footer__form-sub {
-    width: 358px;
-    height: 50px;
-    background-color: transparent;
-    border-radius: 4px;
-    border-color: rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
-
-    &::placeholder {
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.6);
-        padding-left: 16px ;
-    }
-}
-
-.footer__button-subscribe {
+  &__button-subscribe {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,18 +90,70 @@
 
     &:hover,
     &:focus {
-        background-color:  rgba(255, 255, 255, 0.1);
-        cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
     }
-}
+  }
 
-.footer__sub-button-text {
+  &__sub-button-text {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
     color: $WhiteColor;
+  }
+
+  &__icon-send-sub {
+    fill: $WhiteColor;
+  }
+
+  &__form-sub {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+
+    &::placeholder {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+      padding-left: 16px;
+    }
+  }
+
+  &__title-newsletter {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: $WhiteColor;
+    margin-bottom: 20px;
+  }
 }
 
-.footer__icon-send-sub {
-    fill: $WhiteColor;
+/* SOCIAL ICON */
+
+.footer__social-icon-svg {
+  fill: $WhiteColor;
+  margin: 12px;
+}
+
+.footer__social-icon-bg {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  transition: background-color $TransitionSet;
+
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    background-color: $BlueColor;
+    width: 44px;
+    height: 44px;
+    gap: 10px;
+    cursor: pointer;
+  }
 }

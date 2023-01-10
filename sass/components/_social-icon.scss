@@ -1,0 +1,26 @@
+.social-icon {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  &__svg {
+    display: flex;
+    fill: $Gray-icons-color;
+    padding: 12px;
+
+    &:hover,
+    &:focus {
+      background-color: $BlueColor;
+      fill: $WhiteColor;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &__svg-bg {
+    background-color: $WhiteColor;
+    transition: fill $TransitionSet;
+  }
+}

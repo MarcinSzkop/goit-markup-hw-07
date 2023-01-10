@@ -1,19 +1,27 @@
 body {
   font-family: "Roboto";
-}
 
-h1,
-h2,
-h3,
-h4,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  ul,
+  p {
+    margin: 0;
+    padding: 0;
+  }
 
-ul {
-  list-style: none;
+  ul {
+    list-style: none;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .container {
@@ -24,12 +32,4 @@ ul {
 
 .section {
   padding: 94px 0;
-}
-
-img {
-  vertical-align: middle;
-}
-
-a {
-  text-decoration: none;
 }

@@ -132,28 +132,3 @@
     margin-bottom: 20px;
   }
 }
-
-/* SOCIAL ICON */
-
-.footer__social-icon-svg {
-  fill: $WhiteColor;
-  margin: 12px;
-}
-
-.footer__social-icon-bg {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
-  transition: background-color $TransitionSet;
-
-  &:hover,
-  &:focus {
-    border-radius: 50%;
-    background-color: $BlueColor;
-    width: 44px;
-    height: 44px;
-    gap: 10px;
-    cursor: pointer;
-  }
-}

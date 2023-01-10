@@ -62,36 +62,32 @@
       }
     }
   }
-}
 
-/* HEADER - CONTACT */
-
-.navigation-contact {
-  list-style: none;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.navigation-contact a {
-  color: $DarkGrayColor;
-  transition: $TransitionSet;
-}
-
-.navigation-contact__content {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  &:hover,
-  &:focus {
-    color: $BlueColor;
-    fill: currentColor;
+  &__nav-contact {
+    display: flex;
+    align-items: center;
+    list-style: none;
   }
-}
 
-.navigatiion-contact__icon {
-  vertical-align: middle;
-  margin-right: 10px;
-  fill: currentColor;
+  &__nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    margin-left: 30px;
+    color: $DarkGrayColor;
+    transition: $TransitionSet;
+
+    &:hover,
+    &:focus {
+      color: $BlueColor;
+      fill: currentColor;
+    }
+
+    &__nav-icon {
+      vertical-align: middle;
+      margin-right: 10px;
+      fill: currentColor;
+    }
+  }
 }

@@ -1,35 +1,34 @@
 .what-we-do {
-    margin-top: -94px;
-}
+  margin-top: -94px;
 
-.what-we-do__list {
+  &__list {
     list-style: none;
     display: flex;
     gap: 30px;
-}
+  }
 
-.what-we-do-list img {
+  &__img {
     display: block;
-}
+  }
 
-.what-we-do h2 {
+  &__heading {
     font-weight: 700;
     font-size: 36px;
     text-align: center;
     margin-bottom: 50px;
     color: $BlackColor;
-}
+  }
 
-.what-we-do__bg-description {
+  &__bg-description {
     width: 370px;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
     position: relative;
     bottom: 70px;
     margin-bottom: -70px;
-}
+  }
 
-.what-we-do__bg-description p {
+  &__title {
     font-weight: 700;
     font-style: bold;
     font-size: 14px;
@@ -38,4 +37,5 @@
     color: $WhiteColor;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+  }
 }

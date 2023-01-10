@@ -1,43 +1,42 @@
-
 .our-customers {
-    font-style: normal;
-}
+  font-style: normal;
 
-.our-customers h2 {
+  &__heading {
     font-weight: 700;
     font-size: 36px;
     text-align: center;
-}
+  }
 
-.our-customers__bg {
-    width: 170px;   
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__bg {
+    width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid #afb1b8;
     border-radius: 4px;
     margin-top: 50px;
     transition: border-color $TransitionSet;
 
     &:hover,
     &:focus {
-        border-color: $BlueColor;
-        cursor: pointer;
+      border-color: $BlueColor;
+      cursor: pointer;
     }
-}
+  }
 
-.our-customers__bg:hover svg,
-.our-customers__bg:focus svg {
-    fill: $BlueColor;
-}
-
-.our-customers__list {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-.our-customers__icon {
+  &__icon {
     display: flex;
     margin: 16px 32px 16px 32px;
     fill: $Gray-icons-color;
     transition: fill $TransitionSet;
+
+    &:hover,
+    &:focus {
+      fill: $BlueColor;
+    }
+  }
 }

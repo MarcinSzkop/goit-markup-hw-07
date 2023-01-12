@@ -19,33 +19,25 @@
     }
   }
 
+  &__svg--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $TransitionSet;
+    border-radius: 50%;
+    fill: $WhiteColor;
+  }
+
   &__svg-bg {
     background-color: $WhiteColor;
     transition: fill $TransitionSet;
   }
-}
 
-/* FOOTER SOCIAL ICON */
-
-.footer__social-icon-svg {
-  fill: $WhiteColor;
-  margin: 12px;
-}
-
-.footer__social-icon-bg {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  transition: background-color $TransitionSet;
-
-  &:hover,
-  &:focus {
-    background-color: $BlueColor;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    gap: 10px;
-    cursor: pointer;
+  &_svg-bg--footer {
+    &:hover,
+    &:focus {
+      background-color: $BlueColor;
+      border-radius: 50%;
+      gap: 10px;
+      cursor: pointer;
+    }
   }
 }

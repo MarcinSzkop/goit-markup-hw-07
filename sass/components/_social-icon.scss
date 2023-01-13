@@ -9,9 +9,9 @@
     fill: $Gray-icons-color;
     padding: 12px;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $BlueColor;
+      transition: background-color $TransitionSet;
       fill: $WhiteColor;
       border-radius: 50%;
       width: 44px;

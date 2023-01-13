@@ -34,8 +34,7 @@
     fill: $Gray-icons-color;
     transition: fill $TransitionSet;
 
-    &:hover,
-    &:focus {
+    &:hover {
       fill: $BlueColor;
     }
   }

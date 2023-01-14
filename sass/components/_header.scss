@@ -76,18 +76,17 @@
     letter-spacing: 0.02em;
     margin-left: 30px;
     color: $DarkGrayColor;
-    transition: $TransitionSet;
+    fill: currentColor;
+    transition: color $TransitionSet;
 
-    &:hover,
-    &:focus {
+    &:is(:hover, :focus) {
       color: $BlueColor;
-      fill: currentColor;
     }
+  }
 
-    svg {
-      vertical-align: middle;
-      fill: $DarkGrayColor;
-      margin-right: 10px;
-    }
+  &__svg {
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: fill $TransitionSet;
   }
 }

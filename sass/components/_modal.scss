@@ -1,196 +1,196 @@
 .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 500ms ease, visibility 500ms ease;  
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms ease, visibility 500ms ease;
 }
-  
+
 .modal-backdrop {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #00000033;
-    inset: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000033;
+  inset: 0;
 }
-  
+
 .modal-box {
-    position: relative;
-    width: 528px;
-    border-radius: 4px;
-    background-color: $WhiteColor;
-    transition: transform 0.6s; 
-    transition-timing-function: ease;
-    padding: 40px;
-    text-align: center;
+  position: relative;
+  width: 528px;
+  border-radius: 4px;
+  background-color: $WhiteColor;
+  transition: transform 0.6s;
+  transition-timing-function: ease;
+  padding: 40px;
+  text-align: center;
 }
-  
+
 .modal-close-btn {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: inherit;
-    border-radius: 50%;
-    background-color: $WhiteColor;
-    cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+  border-radius: 50%;
+  background-color: $WhiteColor;
+  cursor: pointer;
 }
-  
+
 .modal-close-btn-x {
-    display: block;
+  display: block;
 }
-  
+
 .modal-backdrop.is-hidden .modal-box {
-    transform: scale(0);
+  transform: scale(0);
 }
 
 .form {
-    font-family: Roboto;
+  font-family: Roboto;
 }
 
 .title-form {
-    font-style: bold;
-    font-size: 20px;
-    line-height: 23px;
-    color: $BlackColor;
-    text-align: center;
-    margin-bottom: 30px;
+  font-style: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: $BlackColor;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .field-name-form {
-    display: block;
-    font-style: regular;
-    font-size: 12px;
-    line-height: 14px;
-    color: $DarkGrayColor;
-    margin-bottom: 4px;
-    text-align: start;
+  display: block;
+  font-style: regular;
+  font-size: 12px;
+  line-height: 14px;
+  color: $DarkGrayColor;
+  margin-bottom: 4px;
+  text-align: start;
 }
 
 .form-field {
-    width: 448px;
-    height: 40px;
-    margin-bottom: 10px;
-    border: solid 1px;
-    border-radius: 4px;
-    border-color: rgba(33, 33, 33, 0.2);
-    padding-left: 40px;
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(33, 33, 33, 0.2);
+  padding-left: 40px;
 }
 
 .form-field:focus {
-    border-color: $BlueColor !important;
-    outline: none;
+  border-color: $BlueColor !important;
+  outline: none;
 }
 
 .form-field:focus + svg {
-    fill: $BlueColor;
-    transition: border-color $TransitionSet;
+  fill: $BlueColor;
+  transition: border-color $TransitionSet;
 }
 
 .form-field-comment {
-    width: 448px;
-    height: 120px;
-    margin-bottom: 20px;
-    border: solid 1px;
-    border-radius: 4px;
-    border-color: rgba(33, 33, 33, 0.2);
-    transition: border-color $TransitionSet;
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(33, 33, 33, 0.2);
+  transition: border-color $TransitionSet;
 }
 
 textarea {
-    width: 416px;
-    height: 96px;
-    font-size: 12px;
-    color: rgba(117, 117, 117, 0.5);
-    letter-spacing: 0.01em;
-    padding: 16px 12px 16px 12px;
+  width: 416px;
+  height: 96px;
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.01em;
+  padding: 16px 12px 16px 12px;
 }
 
 .form-field-comment:hover,
 .form-field-comment:focus {
-    border-color: $BlueColor;
+  border-color: $BlueColor;
 }
 
 .icon-form {
-    position: absolute;
-    left: 55px;
-    margin-top: 20px;
-    transform: translateY(-50%);
-    fill: $BlackColor;
-    transition: $TransitionSet;
+  position: absolute;
+  left: 55px;
+  margin-top: 20px;
+  transform: translateY(-50%);
+  fill: $BlackColor;
+  transition: $TransitionSet;
 }
 
 .privacy-box {
-    display: flex;
-    gap: 7px;
-    margin-bottom: 30px;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 14px;
+  display: flex;
+  gap: 7px;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 14px;
 }
 
 .checkbox-wrapper {
-    position: relative;
-    width: 16px;
+  position: relative;
+  width: 16px;
 }
 
 .checkbox-hidden {
-   display: none;
+  display: none;
 }
 
 .checkbox-not-checked {
-    position: absolute;
-    transform: translate(0%, -50%);
-    top: 0;
-    left: 0;
-    opacity: 1;
+  position: absolute;
+  transform: translate(0%, -50%);
+  top: 0;
+  left: 0;
+  opacity: 1;
 }
 
-.checkbox-checked{
-    position: absolute;
-    transform: translate(0%, -50%);
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 1;
+.checkbox-checked {
+  position: absolute;
+  transform: translate(0%, -50%);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
 }
 
 .checkbox-hidden:checked ~ .checkbox-checked {
-    opacity: 1;
+  opacity: 1;
 }
 
 .checkbox-hidden:checked + .checkbox-not-checked {
-    opacity: 0;
+  opacity: 0;
 }
 
 .text-privacy-form {
-    font-style: regular;
-    font-size: 14px;
-    line-height: 24px;
-    color: $DarkGrayColor;
+  font-style: regular;
+  font-size: 14px;
+  line-height: 24px;
+  color: $DarkGrayColor;
 }
 
 .text-privacy-form a {
-    color: $BlueColor;
-  }
+  color: $BlueColor;
+}
 
 .button-submit {
-    width: 200px;
-    height: 50px;
-    background-color: $BlueColor;
-    color: $WhiteColor;
-    border: none;
-    border-radius: 4px;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: $TransitionSet;
+  width: 200px;
+  height: 50px;
+  background-color: $BlueColor;
+  color: $WhiteColor;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: $TransitionSet;
 }
 
 .button-submit:hover,
 .button-submit:focus {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }

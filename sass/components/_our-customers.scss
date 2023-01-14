@@ -20,11 +20,10 @@
     border-radius: 4px;
     margin-top: 50px;
     transition: border-color $TransitionSet;
+    cursor: pointer;
 
-    &:hover,
-    &:focus {
+    &:is(:hover, :focus) {
       border-color: $BlueColor;
-      cursor: pointer;
     }
   }
 
@@ -33,9 +32,9 @@
     margin: 16px 32px 16px 32px;
     fill: $Gray-icons-color;
     transition: fill $TransitionSet;
+  }
 
-    &:hover {
-      fill: $BlueColor;
-    }
+  &__bg:is(:hover, :focus) > &__icon {
+    fill: $BlueColor;
   }
 }

@@ -72,8 +72,9 @@
     fill: $BlackColor;
     transition: $TransitionSet;
 
+    &:hover,
     &:focus {
-      fill: $BlueColor !important;
+      fill: $BlueColor;
     }
   }
 
@@ -86,11 +87,12 @@
     border-color: rgba(33, 33, 33, 0.2);
     padding-left: 40px;
     transition: $TransitionSet;
-  }
 
-  &:focus {
-    border-color: $BlueColor !important;
-    outline: none;
+    &:focus,
+    &:hover {
+      border-color: $BlueColor !important;
+      outline: none;
+    }
   }
 
   &__form-field-comment {
@@ -106,6 +108,10 @@
     &:focus {
       border-color: $BlueColor;
     }
+  }
+
+  &__form-field:focus + &__form-icon {
+    fill: $BlueColor;
   }
 
   &__textarea {

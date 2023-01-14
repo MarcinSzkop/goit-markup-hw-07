@@ -8,39 +8,38 @@
     display: flex;
     fill: $Gray-icons-color;
     padding: 12px;
-    }
   }
+}
 
-  &__svg--footer {
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color $TransitionSet;
-    border-radius: 50%;
-    fill: $WhiteColor;
-  }
+&__svg--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $TransitionSet;
+  border-radius: 50%;
+  fill: $WhiteColor;
+}
 
-  &__svg-bg {
-    background-color: $WhiteColor;
+&__svg-bg {
+  background-color: $WhiteColor;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  &:hover,
+  &:focus {
+    background-color: $BlueColor;
     border-radius: 50%;
     width: 44px;
     height: 44px;
-
-    &:hover,
-    &:focus {
-      background-color: $BlueColor;
-      border-radius: 50%;
-      width: 44px;
-      height: 44px;
-      transition: background-color $TransitionSet;
-    }
+    transition: background-color $TransitionSet;
   }
+}
 
-  &_svg-bg--footer {
-    &:hover,
-    &:focus {
-      background-color: $BlueColor;
-      border-radius: 50%;
-      gap: 10px;
-      cursor: pointer;
-    }
+&_svg-bg--footer {
+  &:hover,
+  &:focus {
+    background-color: $BlueColor;
+    border-radius: 50%;
+    gap: 10px;
+    cursor: pointer;
   }
 }

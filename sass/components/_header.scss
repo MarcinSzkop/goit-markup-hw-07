@@ -84,11 +84,10 @@
       fill: currentColor;
     }
 
-    &__nav-icon {
+    svg {
       vertical-align: middle;
-      width: 10px;
-      height: 16px;
-      fill: color $DarkGrayColor;
+      fill: $DarkGrayColor;
+      margin-right: 10px;
     }
   }
 }
